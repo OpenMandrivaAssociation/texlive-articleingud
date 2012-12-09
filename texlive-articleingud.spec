@@ -6,7 +6,7 @@
 # catalog-version 0.1
 Name:		texlive-articleingud
 Version:	0.1
-Release:	2
+Release:	1
 Summary:	LaTeX class for articles published in INGENIERIA review
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/articleingud
@@ -51,3 +51,11 @@ derived from the standard LaTeX class article.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar tex doc source %{buildroot}%{_texmfdistdir}
+
+
+%changelog
+* Mon Jun 11 2012 Paulo Andrade <pcpa@mandriva.com.br> 0.1-1
++ Revision: 804463
+- Import texlive-articleingud
+- Import texlive-articleingud
+
