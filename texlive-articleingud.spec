@@ -1,11 +1,11 @@
-# revision 26197
+# revision 29803
 # category Package
 # catalog-ctan /macros/latex/contrib/articleingud
-# catalog-date 2012-05-03 11:23:54 +0200
+# catalog-date 2012-11-19 10:50:11 +0100
 # catalog-license lppl1.2
-# catalog-version 0.1
+# catalog-version 0.2
 Name:		texlive-articleingud
-Version:	0.1
+Version:	0.2
 Release:	1
 Summary:	LaTeX class for articles published in INGENIERIA review
 Group:		Publishing
@@ -51,11 +51,3 @@ derived from the standard LaTeX class article.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar tex doc source %{buildroot}%{_texmfdistdir}
-
-
-%changelog
-* Mon Jun 11 2012 Paulo Andrade <pcpa@mandriva.com.br> 0.1-1
-+ Revision: 804463
-- Import texlive-articleingud
-- Import texlive-articleingud
-
