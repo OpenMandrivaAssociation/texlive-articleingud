@@ -6,7 +6,7 @@
 # catalog-version 0.1
 Name:		texlive-articleingud
 Version:	0.1
-Release:	1
+Release:	2
 Summary:	LaTeX class for articles published in INGENIERIA review
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/articleingud
