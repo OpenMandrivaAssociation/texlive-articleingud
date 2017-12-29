@@ -5,8 +5,8 @@
 # catalog-license lppl1.2
 # catalog-version 0.2
 Name:		texlive-articleingud
-Version:	0.2
-Release:	9
+Version:	0.3
+Release:	1
 Summary:	LaTeX class for articles published in INGENIERIA review
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/articleingud
