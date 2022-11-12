@@ -5,9 +5,9 @@ Summary:	LaTeX class for articles published in INGENIERIA review
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/articleingud
 License:	LPPL1.2
-Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/articleingud.r38741.tar.xz
-Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/articleingud.doc.r38741.tar.xz
-Source2:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/articleingud.source.r38741.tar.xz
+Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/articleingud.r%{version}.tar.xz
+Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/articleingud.doc.r%{version}.tar.xz
+Source2:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/articleingud.source.r%{version}.tar.xz
 BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
