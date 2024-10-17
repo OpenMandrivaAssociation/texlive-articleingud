@@ -3,7 +3,7 @@ Version:	38741
 Release:	2
 Summary:	LaTeX class for articles published in INGENIERIA review
 Group:		Publishing
-URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/articleingud
+URL:		https://www.ctan.org/tex-archive/macros/latex/contrib/articleingud
 License:	LPPL1.2
 Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/articleingud.r%{version}.tar.xz
 Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/articleingud.doc.r%{version}.tar.xz
