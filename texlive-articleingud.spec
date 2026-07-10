@@ -1,48 +1,24 @@
-Name:		texlive-articleingud
-Version:	38741
-Release:	2
+%global tl_name articleingud
+%global tl_revision 38741
+
+Name:		texlive-%{tl_name}
+Epoch:		1
+Version:	0.3
+Release:	%{tl_revision}.1
 Summary:	LaTeX class for articles published in INGENIERIA review
 Group:		Publishing
 URL:		https://www.ctan.org/tex-archive/macros/latex/contrib/articleingud
-License:	LPPL1.2
-Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/articleingud.r%{version}.tar.xz
-Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/articleingud.doc.r%{version}.tar.xz
-Source2:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/articleingud.source.r%{version}.tar.xz
+License:	lppl1.2
+Source0:	https://mirrors.ctan.org/systems/texlive/tlnet/archive/articleingud.r%{tl_revision}.tar.xz
+Source1:	https://mirrors.ctan.org/systems/texlive/tlnet/archive/articleingud.doc.r%{tl_revision}.tar.xz
+Source2:	https://mirrors.ctan.org/systems/texlive/tlnet/archive/articleingud.source.r%{tl_revision}.tar.xz
 BuildArch:	noarch
+BuildSystem:	texlive
 BuildRequires:	texlive-tlpkg
-Requires(pre):	texlive-tlpkg
-Requires(post):	texlive-kpathsea
+%texlive_base_requires
+Provides:	texlive(%{tl_name}) = %{tl_revision}
 
 %description
-The class is for articles published in INGENIERIA review. It is
-derived from the standard LaTeX class article.
+The class is for articles published in INGENIERIA review. It is derived
+from the standard LaTeX class article.
 
-%post
-%{_sbindir}/texlive.post
-
-%postun
-if [ $1 -eq 0 ]; then
-	%{_sbindir}/texlive.post
-fi
-
-#-----------------------------------------------------------------------
-%files
-%{_texmfdistdir}/tex/latex/articleingud/articleingud.cls
-%doc %{_texmfdistdir}/doc/latex/articleingud/README
-%doc %{_texmfdistdir}/doc/latex/articleingud/articleingud.pdf
-%doc %{_texmfdistdir}/doc/latex/articleingud/plantilla.tex
-%doc %{_texmfdistdir}/doc/latex/articleingud/template.tex
-#- source
-%doc %{_texmfdistdir}/source/latex/articleingud/articleingud.dtx
-%doc %{_texmfdistdir}/source/latex/articleingud/articleingud.ins
-
-#-----------------------------------------------------------------------
-%prep
-%setup -c -a1 -a2
-%autopatch -p1
-
-%build
-
-%install
-mkdir -p %{buildroot}%{_texmfdistdir}
-cp -fpar tex doc source %{buildroot}%{_texmfdistdir}
